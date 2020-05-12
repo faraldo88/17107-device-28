@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anton Shvarev](https://up.htmlacademy.ru/htmlcss/28/user/17107).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://up.htmlacademy.ru/htmlcss/28/user/170516).
 
 ---
 

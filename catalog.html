@@ -8,29 +8,29 @@
 
 <!--header-->
     <header>
-
 <!--nav-->
       <nav>
         <a href="#"><img src="img/logo_device_header.png" alt="Device"></a>
-      <div>
-        <form>
-          <p><input type="submit" value="Найти">
-          <input type="search" name="q" placeholder="Поиск по сайту"></p>
-        </form>
-        <ul>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <div>
-        <a href="catalog.html">Каталог товаров</a>
-        <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
+        <div>
+          <form action="#" method="POST">
+            <input type="submit" value="Найти">
+            <input type="search" name="q" placeholder="Поиск по сайту">
+          </form>
+          <ul>
+            <li><a href="#">Валентин Петухов</a></li>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="catalog.html">Каталог товаров</a>
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -44,33 +44,72 @@
       </ul>
 
 <!--sidebar-->
-      <aside></aside>
+      <aside>
+        <h2>Фильтр:</h2>
+        <form action="#" method="GET">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <span>от 0</span>
+            <label><input type="range" name="cost" step="100" min="0" max="7500" value="5000"></label>
+            <span>до 5000</span>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label><input type="checkbox" name="black" checked> Чёрный</label>
+            <label><input type="checkbox" name="white"> Белый</label>
+            <label><input type="checkbox" name="blue" checked> Синий</label>
+            <label><input type="checkbox" name="red" checked> Красный</label>
+            <label><input type="checkbox" name="pink"> Розовый</label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label><input type="radio" name="bluetooth" value="true" checked> Есть</label>
+            <label><input type="radio" name="bluetooth" value="false"> Нет</label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </aside>
  
 <!--products-->      
       <section>
+<!--sorting-->
+        <div>
+          <h2>Сортировка:</h2>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+            <li><a href="#">По возрастанию</a></li>
+            <li><a href="#">По убыванию</a></li>
+          </ul>
+        </div>
+
 <!--product list-->
-        <ul>
-          <li>
-            <a href="#"><img src="https://via.placeholder.com/360x380" alt="Виртуальная реальность"></a>
-            <a href="#">Любительская селфи-палка</a>
-            <p>500 руб.</p>
-          </li>
-          <li>
-            <a href="#"><img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка"></a>
-            <a href="#">Профессиональная селфи-палка </a>
-            <p>1 500 руб.</p>
-          </li>
-          <li>
-            <a href="#"><img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка"></a>
-            <a href="#">Непотопляемая селфи-палка</a>
-            <p>2 500 руб.</p>
-          </li>
-          <li>
-            <a href="#"><img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»"></a>
-            <a href="#">Селфи-палка «Следуй за мной»</a>
-            <p>4 900 руб.</p>
-          </li>
-        </ul>
+      <div>
+          <ul>
+            <li>
+              <a href="#"><img src="https://via.placeholder.com/360x380" alt="Виртуальная реальность"></a>
+              <a href="#">Любительская селфи-палка</a>
+              <p>500 руб.</p>
+            </li>
+            <li>
+              <a href="#"><img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка"></a>
+              <a href="#">Профессиональная селфи-палка </a>
+              <p>1 500 руб.</p>
+            </li>
+            <li>
+              <a href="#"><img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка"></a>
+              <a href="#">Непотопляемая селфи-палка</a>
+              <p>2 500 руб.</p>
+            </li>
+            <li>
+              <a href="#"><img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»"></a>
+              <a href="#">Селфи-палка «Следуй за мной»</a>
+              <p>4 900 руб.</p>
+            </li>
+          </ul>
+        </div>
+
 <!--pagination-->
         <div>
           <a href="#">Назад</a>
@@ -84,9 +123,7 @@
       </section>
     </main>
 
-
-
-    <!--footer-->
+<!--footer-->
     <footer>
       <div>
         <a href="#"><img src="img/logo_device_header.png" alt="Device"></a>

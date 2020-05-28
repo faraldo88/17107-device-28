@@ -14,7 +14,7 @@
         <div>
           <form action="#" method="get">
             <input type="search" name="search" placeholder="Поиск по сайту">
-            <button type="submit" value="Найти">
+            <input type="submit" value="Найти">
           </form>
           <ul>
             <li><a href="#"><img src="img/icon-user-header.svg" width="9" height="10" alt="Войти">Войти</a></li>
@@ -250,5 +250,24 @@
         <a href="https://htmlacademy.ru/"><img src="img/logo-html.svg" width="27" alt="HTML Academy"></a>
       </div>
     </footer>
+
+    <!--form whrite us-->
+    <section>
+      <form action="#" method="post">
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" name="user-name" placeholder="Имя Фамилия" required>
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" name="user-email" placeholder="email@example.com" required>
+        <label for="comment">Текст письма:</label>
+        <textarea name="comment" id="form-comment" cols="90" rows="10" placeholder="В свободной форме"></textarea>
+        <input type="submit" value="Отправить">   
+      </form>
+    </section>
+
+<!--map popup-->
+    <section>
+      <img src="img/map-popup.png" alt="Адрес магазина">
+      <button type="button" aria-label="Закрыть">
+    </section>
   </body>
 </html>

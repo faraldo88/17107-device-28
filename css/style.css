@@ -35,3 +35,40 @@
       url("../fonts/opensanslight.woff2") format("woff2"),
       url("../fonts/opensanslight.woff") format("woff");
 }
+
+/* colors */
+::root{
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #4646464;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #ffffff;
+  --special-yellow-dark: #f0c52e;
+  --special-yellow: #f7e296;
+  --special-green: #91c92f;
+}
+
+/* global */
+
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

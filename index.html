@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
 <!--header-->
     <header class="page-header">
@@ -44,88 +44,89 @@
     </header>
 
 <!--main-->
-    <main>
-<!--slider-->
-      <section>
-        <ul>
+  <main>
 <!--slide 1-->
-          <li>
-            <div>
-              <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-            </div>
-            <div>
-              <img src="https://via.placeholder.com/100x7" alt="">
-              <p>01</p>
-              <p>Делай селфи как Бен Стиллер!</p>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего килограмм.</p>
-              <a href="#">Подробнее</a>
-              <table>
-                <tr>
-                  <tb>8,5 м</tb>
-                  <tb>5 кг</tb>
-                  <tb>Карбон</tb>
+    <section class="slider">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <div class="slider__img">
+            <img class="product-img" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+          </div>
+          <div class="slider__content">
+            <div class="decor__main"></div>
+            <div class="slider__num">01</div>
+            <h2 class="slider__title">Делай селфи как Бен Стиллер!</h2>
+            <div class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего килограмм.</div>
+            <div class="btn"><a href="#">Подробнее</a></div>
+            <div class="table">
+              <table class="table__tbody">
+                <tr class="table__row">
+                  <tb class="table__cell">8,5 м</tb>
+                  <tb class="table__cell">5 кг</tb>
+                  <tb class="table__cell">Карбон</tb>
                 </tr>
-                <tr>
-                  <tb>Длина палки</tb>
-                  <tb>Вес палки</tb>
-                  <tb>Материал</tb>
+                <tr class="table__row">
+                  <tb class="table__cell">Длина палки</tb>
+                  <tb class="table__cell">Вес палки</tb>
+                  <tb class="table__cell">Материал</tb>
                 </tr>
               </table>
             </div>  
           </li>
 
 <!--slide 2-->
-          <li>
-            <div>
-              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+
+          <li class="slider__item">
+            <div class="slider__img">
+              <img class="product-img" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             </div>
-            <div>
-              <img src="https://via.placeholder.com/100x7" alt="">
-              <p>02</p>
-              <p>Худеем правильно</p>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#">Подробнее</a>
-              <table>
-                <tr>
-                  <tb>48 часов</tb>
-                </tr>
-                <tr>
-                  <tb>Без подзарядки</tb>
-                </tr>
-              </table>
-            </div>  
-          </li>
+            <div class="slider__content">
+              <div class="decor__main"></div>
+              <div class="slider__num">02</div>
+              <h2 class="slider__title">Худеем правильно</h2>
+              <div class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</div>
+              <div class="btn"><a href="#">Подробнее</a></div>
+              <div class="table">
+                <table class="table__tbody">
+                  <tr class="table__row">
+                    <tb class="table__cell">48 часов</tb>
+                  </tr>
+                  <tr class="table__row">
+                    <tb class="table__cell">Без подзарядки</tb>
+                  </tr>
+                </table>
+              </div>  
+            </li>
 
 <!--slide 3-->
-          <li>
-            <div>
-              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            </div>
-            <div>
-              <img src="https://via.placeholder.com/100x7" alt="">
-              <p>03</p>
-              <p>Порхает как бабочка, жалит как пчела!</p>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="#">Подробнее</a>
-              <table>
-                <tr>
-                  <tb>800 м</tb>
-                  <tb>50 м</tb>
+
+        <li class="slider__item">
+          <div class="slider__img">
+            <img class="product-img" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+          </div>
+          <div class="slider__content">
+            <div class="decor__main"></div>
+            <div class="slider__num">02</div>
+            <h2 class="slider__title">Порхает как бабочка, жалит как пчела!</h2>
+            <div class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</div>
+            <div class="btn"><a href="#">Подробнее</a></div>
+            <div class="table">
+              <table class="table__tbody">
+                <tr class="table__row">
+                  <tb class="table__cell">800 м</tb>
+                  <tb class="table__cell">50 м</tb>
                 </tr>
-                <tr>
-                  <tb>Дальность полета</tb>
-                  <tb>Радиус поражения</tb>
+                <tr class="table__row">
+                  <tb class="table__cell">Дальность полета</tb>
+                  <tb class="table__cell">Радиус поражения</tb>
                 </tr>
               </table>
             </div>  
           </li>
-        </ul>
-
-<!--listing buttons-->
-        <div>
-          <button>Слайд 1</button>
-          <button>Слайд 2</button>
-          <button>Слайд 3</button>
+        <div class="lising">
+          <button class="btn__slider">Слайд 1</button>
+          <button class="btn__slider">Слайд 2</button>
+          <button class="btn__slider">Слайд 3</button>
         </div>
        </section>
 

@@ -28,6 +28,7 @@
 }
 
 /* colors */
+
 :root{
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -75,6 +76,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 
 /* site navigation */
 
